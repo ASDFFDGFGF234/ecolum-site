@@ -1,14 +1,17 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
 body {
   background-color: #111827;
   color: #f9fafb;
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
+  transition: all 0.4s ease-in-out;
 }
 header {
   background: #1f2937;
-  padding: 1rem;
+  padding: 1.5rem;
   text-align: center;
 }
 nav {
@@ -16,24 +19,67 @@ nav {
   justify-content: center;
   gap: 2rem;
   background: #374151;
-  padding: 0.5rem;
+  padding: 0.8rem;
 }
 nav a {
   color: #f9fafb;
   text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #10b981;
 }
 main {
   padding: 2rem;
 }
 .logo {
-  width: 100px;
+  width: 150px;
   display: block;
   margin: 0 auto;
+}
+.producto {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+.producto-img {
+  width: 200px;
+  border-radius: 8px;
 }
 button {
   background-color: #10b981;
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 1rem;
 }
+ul {
+  list-style-type: square;
+  margin-left: 1.5rem;
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.8s;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.cart-item img {
+  width: 80px;
+  border-radius: 8px;
+}
+
