@@ -1,0 +1,39 @@
+
+body {
+  background-color: #111827;
+  color: #f9fafb;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #1f2937;
+  padding: 1rem;
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: #374151;
+  padding: 0.5rem;
+}
+nav a {
+  color: #f9fafb;
+  text-decoration: none;
+}
+main {
+  padding: 2rem;
+}
+.logo {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+button {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
